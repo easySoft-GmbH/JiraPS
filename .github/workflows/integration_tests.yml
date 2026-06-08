@@ -11,8 +11,8 @@ name: Integration Tests
 # only run on the cron and on explicit dispatch because the Cloud full
 # suite burns API quota and the Server cold boot is ~25 min.
 on:
-  schedule:
-    - cron: "0 5 * * *"
+  # schedule:
+  #   - cron: "0 5 * * *"
   workflow_dispatch:
     inputs:
       track:
